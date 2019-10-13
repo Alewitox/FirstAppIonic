@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>SoloRestaurantes</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <br>
+
+
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+        <ion-item>
+            <ion-label position="stacked">ID <ion-text color="danger"></ion-text></ion-label>
+            <ion-input required type="text" [(ngModel)]="id"></ion-input>
+          </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Nombre restaurante <ion-text color="danger"></ion-text></ion-label>
+          <ion-input required type="text" [(ngModel)]="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">Dirección <ion-text color="danger"></ion-text></ion-label>
+            <ion-input required type="text" [(ngModel)]="address"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label position="stacked">Tipo de comida <ion-text color="danger"></ion-text></ion-label>
+              <ion-input required type="text" [(ngModel)]="typeOfFood"></ion-input>
+            </ion-item>
+
+    </ion-list>
+
+    <ion-button class="center" (click)="modifyRestaurantes()" color="warning">Modificar restaurante</ion-button>
+</ion-content>

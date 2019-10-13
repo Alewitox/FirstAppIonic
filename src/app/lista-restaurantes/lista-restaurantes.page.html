@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>SoloRestaurantes</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+    <ion-list id="item1">
+
+    </ion-list>
+
+
+
+    <ion-fab horizontal="center" vertical="bottom" slot="fixed">
+      <ion-fab-button color="warning">
+        <ion-icon name="arrow-dropup"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="top">
+        <ion-fab-button color="warning" (click)="goToAddPage()">
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="warning" (click)="goToModifyPage()">
+          <ion-icon name="create"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+   
+
+</ion-content>
